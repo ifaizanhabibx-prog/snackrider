@@ -14,11 +14,11 @@ function AppRoutes() {
       <Route path="/" element={<Home />} />
       <Route path="/menu" element={<RestaurantMenu />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
       <Route element={<ProtectedRoute />}>
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/tracking" element={<OrderTracking />} />
-        <Route path="/register" element={<Register />} />
       </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>
